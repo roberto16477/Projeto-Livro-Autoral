@@ -1,0 +1,217 @@
+/* Variáveis para facilitar a mudança de tema */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-comprar-nav {
+    background-color: var(--secondary-color);
+    color: var(--white) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Seções Gerais */
+section {
+    padding: 5rem 10%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Botões */
+.btn-primary, .btn-secondary, .btn-submit, .store-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    margin-left: 1rem;
+}
+
+.btn-primary:hover, .btn-submit:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Grid de Depoimentos e Sobre */
+.book-details, .author-profile {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.author-photo {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    font-style: italic;
+}
+
+/* Compra e Contato */
+.purchase {
+    text-align: center;
+    background-color: #eef2f5;
+}
+
+.store-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.amazon { background-color: #FF9900; color: #fff; }
+.personal-store { background-color: var(--primary-color); color: #fff; }
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 4rem 10% 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+form input, form textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsividade (Mobile First concept via Media Queries) */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; padding: 1rem; }
+    .nav-links { flex-wrap: wrap; justify-content: center; margin-top: 1rem; }
+    .hero, .book-details, .author-profile, .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content { padding-right: 0; margin-bottom: 2rem; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .btn-secondary { margin-left: 0; margin-top: 1rem; }
+    .author-photo { margin-bottom: 2rem; }
+    .store-links { flex-direction: column; }
+}
