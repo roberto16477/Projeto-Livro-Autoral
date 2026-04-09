@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra o novo livro [Nome do Livro]. Uma jornada incrível sobre [Tema do Livro]. Compre agora e mergulhe nesta história.">
+    <meta name="keywords" content="livro, [gênero], [nome do autor], comprar livro, literatura">
+    <title>A Batalha do Labirinto - Por Rick Riordan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><b>A Batalha do Labirinto</b></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre-livro">O Livro</a></li>
+                <li><a href="#sobre-autor">O Autor</a></li>
+                <li><a href="#depoimentos">Resenhas</a></li>
+                <li><a href="blog.html">Blog</a></li> <li><a href="#comprar" class="btn-comprar-nav">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Uma história que vai prender sua atenção do início ao fim.</h1>
+            <p>Disponível nas versões Física e Kindle.</p>
+            <a href="#comprar" class="btn-primary">Garanta o seu exemplar</a>
+            <a href="#sobre-livro" class="btn-secondary">Ler Sinopse</a>
+        </div>
+        <div class="hero-image">
+            <img src="img/capa-do-livro.jpg" alt="Capa do Livro [Nome do Livro]">
+        </div>
+    </section>
+
+    <section id="sobre-livro" class="about-book">
+        <h2>Sobre a Obra</h2>
+        <div class="book-details">
+            <div class="synopsis">
+                <h3>Sinopse</h3>
+                <p>A Batalha do Labirinto é o quarto livro da série Percy Jackson e Os Olimpianos, de Rick Riordan. O Livro narra as aventuras de Percy Jackson e seus amigos na tentativa de defender seu Acampamento de uma invasão do exército de Cronos, através do Labirinto de Dédalo.</p>
+                <button id="btn-trecho" class="btn-text">Ler um trecho do Capítulo 1</button>
+            </div>
+            <div class="features">
+                <h3>Detalhes</h3>
+                <ul>
+                    <li><strong>Páginas:</strong> 320</li>
+                    <li><strong>Editora:</strong> Intrínseca</li>
+                    <li><strong>Gênero:</strong> Ação e Aventura</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-autor" class="about-author">
+        <h2>Conheça o Autor</h2>
+        <div class="author-profile">
+            <img src="img/foto-autor.jpg" alt="Foto de [Nome do Autor]" class="author-photo">
+            <div class="author-bio">
+                <h3>Rick Riordan</h3>
+                <p>Richard Russell Riordan Jr, mais conhecido como Rick Riordan, é um escritor norte-americano, mais conhecido por escrever a série Percy Jackson e Os Olimpianos de 2005 a 2009. Ele também escreveu a série adulta de mistérios Tres Navarre em 1997.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials">
+        <h2>O que os leitores estão dizendo</h2>
+        <div class="testimonial-grid">
+            <div class="card">
+                <p>"Uma leitura envolvente e emocionante. Não consegui largar o livro até terminar!"</p>
+                <span>- Leitora Satisfeita</span>
+            </div>
+            <div class="card">
+                <p>"A construção de mundo e o desenvolvimento dos personagens são impecáveis."</p>
+                <span>- Blog Literário X</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="comprar" class="purchase">
+        <h2>Onde Adquirir</h2>
+        <p>Escolha a sua plataforma favorita e comece a ler hoje mesmo.</p>
+        <div class="store-links">
+            <a href="https://www.amazon.com.br/Batalha-do-Labirinto-Rick-Riordan/dp/8598078700/ref=sr_1_1?__mk_pt_BR=ÅMÅŽÕÑ&crid=2AEKTMB4OZ5ZA&dib=eyJ2IjoiMSJ9.fA60zuVwre6ElllnUUYhbDpMki2AT7U37JS98Ba8sEFwGRjfHjJJhTDBxzThXmXuwcLw0uPbYYIRt2A_J-q7UA.PCs7ErKYCPZxCbmJN8ZyzyFwII9KCLLIkpkOXFobbzo&dib_tag=se&keywords=a+batalha+do+labirinto+primeira+capa&qid=1775508755&s=books&sprefix=a+batalha+do+labirinto+primeira+capa%2Cstripbooks%2C234&sr=1-1" target="_blank" class="store-btn amazon">Comprar na Amazon</a>
+            <a href="https://www.readriordan.com" target="_blank" class="store-btn personal-store">Loja do Autor</a>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-content">
+            <div class="contact-form">
+                <h3>Fale com o Autor</h3>
+                <form id="formContato">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu E-mail" required>
+                    <textarea placeholder="Sua Mensagem" rows="4" required></textarea>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <p>Siga nas redes sociais:</p>
+                <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Goodreads</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Rick Riordan. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
